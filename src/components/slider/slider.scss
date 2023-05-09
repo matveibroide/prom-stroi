@@ -1,0 +1,49 @@
+.slider {
+    height:100%;
+    position:relative;
+    
+
+    .left-arrow {
+
+        position:absolute;
+        top:50%;
+        transform:translate(0, -50%);
+        left:32px;
+        font-size:3em;
+        color:#d4c59d;
+        z-index:1;
+        cursor:pointer;
+        opacity:0.8;
+    }
+
+    .right-arrow {
+        position:absolute;
+        top:50%;
+        transform:translate(0, -50%);
+        right:32px;
+        font-size:3em;
+        color:#d4c59d;
+        z-index:1;
+        cursor:pointer;
+        opacity:0.8;
+    }
+
+    .dots-container {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .dot {
+
+        color:#e0cfa5;
+        font-size:2em;
+        margin:0 3px;
+        cursor:pointer;
+    }
+
+
+}
+
+
+

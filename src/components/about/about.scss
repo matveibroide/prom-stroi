@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.about {
+    background: var(--main-background-color);
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the paragraph text */
+  p {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin: 2em auto;
+    max-width: 80%;
+    text-align: left;
+}
+
+/* Style for the header */
+.about-header {
+padding-top: 2em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+/* Decrease margin on the paragraph text */
+p {
+    margin: 1.5em auto;
+}
+
+/* Decrease font size on the paragraph text */
+p {
+    font-size: 1em;
+}
+}

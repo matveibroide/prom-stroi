@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
+@import '../styles/variables.scss';
+
+
+
+
+.App {
+  text-align: center;
+  background: var(--main-background-color);
+	height: 100%;
+  width: 100%;
+  font-weight: bold;
+  font-family: var(--text-style);
+  overflow-x: hidden;
+  margin: 0;
+}
+
+h1 {
+  margin: 1em auto;
+  background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 40%, #cfc09f 60%, #cfc09f 27%,#ffecb3 80%,#3a2c0f 100%); 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-family: var(--text-style);
+text-transform: uppercase;	
+font-size: 2.5em;
+font-weight: 400;
+}
+
+h1:after {
+  background: none;
+  content: attr(data-heading);
+  left: 0;
+top: 0;
+  z-index: -1;
+  position: absolute;
+  text-shadow: 
+  -1px 0 1px #c6bb9f, 
+  0 1px 1px #c6bb9f, 
+  5px 5px 10px rgba(0, 0, 0, 0.4),
+  -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  margin: 1em auto;
+  background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 40%, #cfc09f 60%, #cfc09f 27%,#ffecb3 80%,#3a2c0f 100%); 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-family: var(--text-style);
+text-transform: uppercase;	
+font-size: 2.5em;
+font-weight: 400;
+}
+  
+h2:after {
+  background: none;
+  content: attr(data-heading);
+  left: 0;
+top: 0;
+  z-index: -1;
+  position: absolute;
+  text-shadow: 
+  -1px 0 1px #c6bb9f, 
+  0 1px 1px #c6bb9f, 
+  5px 5px 10px rgba(0, 0, 0, 0.4),
+  -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
