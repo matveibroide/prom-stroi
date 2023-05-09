@@ -4,7 +4,7 @@ import React from 'react';
 function Contacts() {
   return (
     <div className="contacts-wrapper">
-      <div className='contacts'>
+      <div id='contacts' className='contacts'>
         <h2>Contact Us</h2>
         <div className="address-wrapper">
           <p>Phone: (555) 123-4567</p>

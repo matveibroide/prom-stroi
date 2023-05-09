@@ -88,6 +88,7 @@
 .close-bar {
     cursor: pointer;
     color: bisque;
+    margin: 1em auto;
     
 }
 
@@ -102,7 +103,9 @@
 
 @media (max-width: 600px) {
 
-   
+   .img-div {
+    width: 90%;
+   }
 
     div {
     height: auto;
@@ -119,6 +122,8 @@
             margin: 1em auto;
             min-width: 90%;
             min-height: 35%;
+
+            
         }
     }
 
