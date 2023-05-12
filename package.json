@@ -2,7 +2,7 @@
   "name": "broyde-security-solutions",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://https://matveibroide.github.io/security",
+  "homepage": "https://matveibroide.github.io/security",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

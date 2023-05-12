@@ -10,10 +10,11 @@ function Slider({slides}) {
         width:'100%',
         height:'100%',
         backgroundImage:`url(${slides[currentIndex].url})`,
-        borderRadius:'10px',
+        borderRadius:'0%',
         backgroundPosition:'center',
         backgroundSize:'cover',
-        transition:'0.5s'
+        transition:'0.5s',
+
     }
 
 

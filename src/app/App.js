@@ -6,6 +6,7 @@ import Slider from '../components/slider/slider';
 import About from '../components/about/about';
 import Professionals from '../components/professionals/professionals';
 import Contacts from '../components/contacts/contacts';
+import ContactForm from '../components/form/form';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
     </div>
     <About/>
     <Professionals/>
+    <ContactForm/>
     <Contacts/>
     </div>
   );
