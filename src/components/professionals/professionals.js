@@ -89,7 +89,7 @@ function Professionals() {
         
         <div id="pros" className="pros-section">
             
-            <h1>OUR SERVICES</h1>
+            <h1 className="pros-main-header">OUR SERVICES</h1>
             {content()}
             {visible.backContentVisible ? (
 
