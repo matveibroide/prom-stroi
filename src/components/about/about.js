@@ -1,12 +1,15 @@
 import React from "react";
 import './about.scss'
+import { useContext } from "react";
+import { ThemeContext } from "../context/context";
 
 
 
 function About() {
 
+    const theme = useContext(ThemeContext)
     return (
-        <div id="about-section" className="about">
+        <div id="about-section" className={theme.context === 'dark' ? 'about' : 'about-light' }>
             <h1 className="about-header">ABOUT</h1>
                 <p>Looking for the ultimate security solution? Look no further than our top-of-the-line security company, offering Israeli professional bodyguards to keep you and your loved ones safe and secure.
 

@@ -1,0 +1,32 @@
+
+
+    .change-theme-button {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        color:(var( --text-color));
+    
+        .theme-descr-dark {
+            padding-top: 1em;
+            align-items: left;
+            width: 25%;
+        }
+
+        .theme-descr-light {
+            padding-top: 1em;
+            align-items: left;
+            width: 25%;
+            color: var(--text-color-light);
+            font-weight: 900;
+        }
+        
+        button {
+            width: 25%;
+            background: transparent;
+            border: transparent;
+        }
+    }
+
+
+

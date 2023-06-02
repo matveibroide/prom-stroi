@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import './slider.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { ThemeContext } from "../context/context";
+
 
 function Slider({slides}) {
 
     const [currentIndex,setCurrentIndex] = useState(0)
 
+    const theme = useContext(ThemeContext)
     
     const slideStyles = {
         width:'100%',
@@ -35,10 +40,10 @@ function Slider({slides}) {
     }
 
     return (
-        <div className="slider">
-            <div className="left-arrow"  onClick={goToPrevious}>⇐</div>
+        <div className={theme.context === 'dark' ? 'slider-dark' : 'slider-light'}>
+            <div className="left-arrow"  onClick={goToPrevious}><FontAwesomeIcon icon={faArrowLeft}/></div>
             <div style={slideStyles}></div>
-            <div className="right-arrow" onClick={goToNext}>⇒</div>
+            <div className="right-arrow" onClick={goToNext}><FontAwesomeIcon icon={faArrowRight}/></div>
             <div className="dots-container">
                 {slides.map((slide,slideIndex)=>(
                     <div 

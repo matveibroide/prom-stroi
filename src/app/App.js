@@ -1,4 +1,4 @@
-
+import { ThemeContextProvider, ThemeContext } from '../components/context/context';
 import './App.scss';
 import Header from '../components/header/header';
 import NavBar from '../components/nav-bar/navBar';
@@ -6,12 +6,17 @@ import Slider from '../components/slider/slider';
 import About from '../components/about/about';
 import Professionals from '../components/professionals/professionals';
 import Contacts from '../components/contacts/contacts';
-import Form from '../components/form/form';
+import ChangeThemeButton from '../components/changeThemeButton/changeThemeButton';
+import {useContext, useState} from 'react'
 
+
+/* import Form from '../components/form/form'; */
 
 
 function App() {
-
+  
+  let theme =  useContext(ThemeContext);
+  
   const slides =
   [
     {url:'http://2.bp.blogspot.com/-Z4b2SSXX570/UQCO16H3-nI/AAAAAAAC7vM/NABZuCgaBeo/s1600/9999999999999999.jpg',title:'army'},
@@ -30,7 +35,9 @@ function App() {
   
 
   return (
-    <div className="App">
+    
+    <div className={theme.context === 'dark' ? 'App-dark' : 'App-light' }>
+    <ChangeThemeButton/>
     <Header/>
     <NavBar/>
     <div style = {containerStyles}>
@@ -38,10 +45,10 @@ function App() {
     </div>
     <About/>
     <Professionals/>
-    <Form/>
+    {/* <Form/> */}
     <Contacts></Contacts>
-    
     </div>
+    
   );
 }
 

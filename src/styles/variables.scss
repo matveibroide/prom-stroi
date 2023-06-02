@@ -2,9 +2,16 @@
 
 
 :root {
+    //dark theme
     --main-background-color: radial-gradient(ellipse at center, #707979 0%,#000000 100%);
     --text-color:#c6bb9f;
     --text-style:'Quicksand', sans-serif;
     --color-back:#443501;
+    
+    //light theme
+    --main-background-color-light:white;
+    --text-color-light:#454343;
+    --text-style-light:'Quicksand', sans-serif;
+    --color-back-light:#898887;
 
 }

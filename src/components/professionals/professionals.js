@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import './professionals.scss'
+import { ThemeContext } from "../context/context";
 
 
 
@@ -8,6 +9,7 @@ function Professionals() {
     
     const [visible, setVisible] = useState({ isOpen: false, currentSlide: null,backContentVisible:true,sectionVisible:false});
 
+    const theme = useContext(ThemeContext);
     console.log(visible)
 
     const handleClick = (index) => {
@@ -87,7 +89,7 @@ function Professionals() {
 
     return (
         
-        <div id="pros" className="pros-section">
+        <div id="pros" className={theme.context === 'dark' ? 'pros-section-dark' : 'pros-section-light'}>
             
             <h1 className="pros-main-header">OUR SERVICES</h1>
             {content()}

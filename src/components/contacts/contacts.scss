@@ -1,30 +1,46 @@
 
-.contacts-wrapper {
+.contacts-wrapper-dark {
   margin: 1em auto;
   display: flex;
   justify-content: space-around;
+
+  .contacts {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    max-width: 500px;
+    border-bottom:1px solid var(--text-color) ;
+    border-top:1px solid var(--text-color) ;
+    padding: 20px;
+    margin: 20px;
+
+
+    .address-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      p {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        color: var(--text-color);
+      }
+    }
   
 }
 
-.contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  max-width: 500px;
-  border-bottom:1px solid var(--text-color) ;
-  border-top:1px solid var(--text-color) ;
-  padding: 20px;
-  margin: 20px;
-}
+
 
 .links {
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: auto;
   max-width: 500px;
   border-bottom:1px solid var(--text-color) ;
@@ -35,15 +51,23 @@
   .links-inner-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: left;
+
+    h2 {
+      text-align: center;
+    }
   }
 
   a {
-    margin: 0.5em;
+    
     text-transform: uppercase;
     text-decoration: none;
     color: var(--text-color);
     text-align: left;
     border-bottom: transparent;
+    margin: 1.5em auto 1.5em 0;
+    
+    
   }
 
   a:hover {
@@ -57,38 +81,186 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-p {
-  font-size: 1rem;
-  margin-bottom: 5px;
+}
+
+
+// light theme 
+
+
+.contacts-wrapper-light {
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-around;
+
+  .contacts {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    max-width: 500px;
+    border-bottom:1px solid var(--text-color-light) ;
+    border-top:1px solid var(--text-color-light) ;
+    padding: 20px;
+    margin: 20px;
+
+
+    .address-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      p {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        color: var(--text-color-light);
+      }
+    }
   
 }
 
 
 
-/* Responsive design */
-    @media (max-width: 600px) {
-    div {
-    height: auto;
-    max-width: 100%;
-    }
 
-    .links-inner-wrapper a {
-      font-size: 0.7em;
-      
-    }
 
-    .links-inner-wrapper p {
-      font-size: 0.7em;
-      
-    }
+
+
+.links {
+  color: var(--text-color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  max-width: 500px;
+  border-bottom:1px solid var(--text-color-light) ;
+  border-top:1px solid var(--text-color-light) ;
+  padding: 20px;
+  margin: 20px;
+
+  .links-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 
     h2 {
-    font-size: 1.2rem;
+      text-align: center;
     }
+  }
 
-    p {
-    font-size: 0.9rem;
-    }
+  a {
+    
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color-light);
+    text-align: left;
+    border-bottom: transparent;
+    margin: 1.5em auto 1.5em 0;
+    
+    
+  }
+
+  a:hover {
+    transition: 0.5s;
+    border-bottom: 1px solid var(--text-color-light);
+  }
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+}
+
+
+
+
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+div {
+height: auto;
+max-width: 100%;
+}
+
+
+
+
+//dark
+
+.contacts-wrapper-dark {
+
+  .links-inner-wrapper a {
+    font-size: 0.7em;
+    margin: 1.5em;
+    
+  }
+
+  .links-inner-wrapper p {
+    font-size: 0.7em;
+
+  }
+
+  .contacts {
+    min-width: 40%;
+  }
+
+  h2 {
+  font-size: 1.2rem;
+  }
+
+  p {
+  font-size: 0.8rem;
+  }
+}
+
+
+
+
+    //light
+
+
+
+.contacts-wrapper-light {
+
+  .links-inner-wrapper a {
+    font-size: 0.7em;
+    margin: 1.5em;
+    
+  }
+
+  .links-inner-wrapper p {
+    font-size: 0.7em;
+
+    
+    
+  }
+
+  .contacts {
+    min-width: 40%;
+  }
+  
+
+  
+.address-wrapper h2 {
+  font-size: 1.2rem;
+  }
+
+  p {
+  font-size: 0.8rem;
+  }
+}
+
+
     }
