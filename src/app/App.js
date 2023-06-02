@@ -8,7 +8,10 @@ import Professionals from '../components/professionals/professionals';
 import Contacts from '../components/contacts/contacts';
 import ChangeThemeButton from '../components/changeThemeButton/changeThemeButton';
 import {useContext, useState} from 'react'
-
+import img from '../assets/pic1.jpg'
+import img2 from '../assets/pic2.jpg'
+import img3 from '../assets/pic3.jpg'
+import img4 from '../assets/pic4.jpg'
 
 /* import Form from '../components/form/form'; */
 
@@ -19,10 +22,12 @@ function App() {
   
   const slides =
   [
-    {url:'http://2.bp.blogspot.com/-Z4b2SSXX570/UQCO16H3-nI/AAAAAAAC7vM/NABZuCgaBeo/s1600/9999999999999999.jpg',title:'army'},
-    {url:'https://detective.kiev.ua/wp-content/uploads/2015/06/index09808972.jpg',title:'army'},
-    {url:'https://s.hdnux.com/photos/44/14/55/9489271/3/rawImage.jpg',title:'army'},
-    {url:'https://secureservercdn.net/45.40.150.81/1da.1b3.myftpupload.com/wp-content/uploads/2018/11/Depositphotos_174776994_l-2015-1280x854.jpg',title:'army'}
+    
+      {url:`${img}`,title:'army'},
+      {url:`${img2}`,title:'army'},
+      {url:`${img3}`,title:'army'},
+      {url:`${img4}`,title:'army'}
+    
   ]
 
   const containerStyles = {

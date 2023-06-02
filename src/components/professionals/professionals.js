@@ -1,7 +1,9 @@
 import React, { useContext, useState } from "react";
 import './professionals.scss'
 import { ThemeContext } from "../context/context";
-
+import img from '../../assets/pic1.jpg'
+import img2 from '../../assets/pic2.jpg'
+import img3 from '../../assets/pic3.jpg'
 
 
 
@@ -10,7 +12,7 @@ function Professionals() {
     const [visible, setVisible] = useState({ isOpen: false, currentSlide: null,backContentVisible:true,sectionVisible:false});
 
     const theme = useContext(ThemeContext);
-    console.log(visible)
+    
 
     const handleClick = (index) => {
         setVisible(prevState => ({
@@ -34,9 +36,9 @@ function Professionals() {
 
     const pros =
     [
-    {url:'https://secureservercdn.net/45.40.150.81/1da.1b3.myftpupload.com/wp-content/uploads/2018/11/Depositphotos_174776994_l-2015-1280x854.jpg',title:'army'},
-    {url:'https://i.insider.com/5ba950b3304c38404b8b4571',title:'army'},
-    {url:'https://s.hdnux.com/photos/44/14/55/9489271/3/rawImage.jpg',title:'army'},
+        {url:`${img}`,title:'army'},
+        {url:`${img2}`,title:'army'},
+        {url:`${img3}`,title:'army'},
     ]
 
     const titles = ['Personal Protection', 'Residential Security','Travel Security']
