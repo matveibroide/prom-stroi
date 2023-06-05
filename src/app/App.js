@@ -23,10 +23,10 @@ function App() {
   const slides =
   [
     
-      {url:`${img}`,title:'army'},
-      {url:`${img2}`,title:'army'},
-      {url:`${img3}`,title:'army'},
-      {url:`${img4}`,title:'army'}
+      {url:`${img}`,title:'Businessman with professional bodyguards'},
+      {url:`${img2}`,title:'Businessman with professional bodyguards around bank'},
+      {url:`${img3}`,title:'Businessman with professional bodyguards sits in a car'},
+      {url:`${img4}`,title:'Businessman with professional bodyguards goes out an elevator'}
     
   ]
 

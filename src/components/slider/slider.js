@@ -39,10 +39,12 @@ function Slider({slides}) {
         setCurrentIndex(slideIndex)
     }
 
+    
+
     return (
         <div className={theme.context === 'dark' ? 'slider-dark' : 'slider-light'}>
             <div className="left-arrow"  onClick={goToPrevious}><FontAwesomeIcon icon={faArrowLeft}/></div>
-            <div style={slideStyles}></div>
+            <div alt = {slides[currentIndex].title} style={slideStyles}></div>
             <div className="right-arrow" onClick={goToNext}><FontAwesomeIcon icon={faArrowRight}/></div>
             <div className="dots-container">
                 {slides.map((slide,slideIndex)=>(
