@@ -1,40 +1,49 @@
-/*     import React, { useState } from "react";
-    import axios from "axios";
-    import './form.scss'
+import React, { useState } from "react";
+import axios from "axios";
+import './form.scss'
 
-    function Form() {
-    const [formData, setFormData] = useState({});
-    const [responseData, setResponseData] = useState("");
+function Form() {
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(formData)
-        axios
-        .post("http://localhost:8888/mail.php", formData)
-        .then((response) => {
-            console.log(response);
-            setResponseData(response.data);
-          })
-        .catch((error) => console.log(error));
-    };
+const [formData, setFormData] = useState({});
+const [responseData, setResponseData] = useState("");
 
-    const handleInputChange = (event) => {
-        setFormData({ ...formData, [event.target.name]: event.target.value });
-    };
+const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData)
+    axios
+    .post("http://localhost:8888/mail.php", formData)
+    .then((response) => {
+        console.log(response);
+        setResponseData(response.data);
+    })
+    .catch((error) => console.log(error));
+};
 
-    return (
-        <div className="form-wrapper">
-            <h1 className="contacts-header">Contacts</h1>
-            <h2>To get in touch fill this form:</h2>
-        <form className="contact-form" onSubmit={handleSubmit}>
-            <input type="text" name="name" onChange={handleInputChange} placeholder="Name" />
-            <input type="email" name="email" onChange={handleInputChange} placeholder="email" />
-            <button type="submit">Submit</button>
+const handleInputChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+};
+
+return (
+    <div id="form" className="form-wrapper">
+        <h1 className="contacts-header">Contacts</h1>
+        <h2>To get in touch fill this form:</h2>
+            <form className="contact-form" name="contact" method="post">
+                <input required type="hidden" name="form-name" value="contact" />
+                <p>
+                    <label>Your Name: <input required type="text" name="name"/></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email"/></label>
+                </p>
+                <p>
+                    <label className="messageLabel">Message: <textarea required name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
         </form>
-        {responseData && <p>{responseData}</p>}
-        </div>
-    );
-    }
+    </div>
+);
+}
 
-    export default Form;
- */
+export default Form;

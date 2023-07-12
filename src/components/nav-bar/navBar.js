@@ -12,10 +12,11 @@ function NavBar() {
     listStyle: 'none',
     display: 'flex',
     justifyContent:'space-around',
+    marginBottom:'4em'
     }
+
     return (
         <div style={navBarStyles}  className={theme.context === 'dark' ? 'nav-dark' : 'nav-light'}>
-            <li><a href="#about-section">About</a> </li>
             <li><a href="#pros">Our Services</a> </li>
             <li><a href="#contacts">Contacts</a> </li>
         </div>

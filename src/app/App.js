@@ -3,10 +3,9 @@ import './App.scss';
 import Header from '../components/header/header';
 import NavBar from '../components/nav-bar/navBar';
 import Slider from '../components/slider/slider';
-import About from '../components/about/about';
 import Professionals from '../components/professionals/professionals';
 import Contacts from '../components/contacts/contacts';
-import ChangeThemeButton from '../components/changeThemeButton/changeThemeButton';
+import Form from '../components/form/form';
 import {useContext, useState} from 'react'
 import img from '../assets/pic1.jpg'
 import img2 from '../assets/pic2.jpg'
@@ -37,20 +36,16 @@ function App() {
     
   }
 
-  
-
   return (
     
     <div className={theme.context === 'dark' ? 'App-dark' : 'App-light' }>
-    <ChangeThemeButton/>
     <Header/>
     <NavBar/>
     <div style = {containerStyles}>
     <Slider slides = {slides}/>
     </div>
-    <About/>
     <Professionals/>
-    {/* <Form/> */}
+    <Form/> 
     <Contacts></Contacts>
     </div>
     

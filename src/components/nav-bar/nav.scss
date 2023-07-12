@@ -6,6 +6,7 @@
   list-style: 'none';
   display: 'flex';
   justify-content:'space-around';
+  
 
   a {
     background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 40%, #cfc09f 60%, #cfc09f 27%,#ffecb3 80%,#3a2c0f 100%); 
@@ -42,49 +43,7 @@
   }
 }
 
-.nav-light {
 
-  margin: '2em auto';
-  font-size: '2em';
-  color: '#a78140';
-  list-style: 'none';
-  display: 'flex';
-  justify-content:'space-around';
-
-  a {
-    background: linear-gradient(to bottom, #a0a0a0 22%,#4a4a4a 40%, #2e2e2d 60%, #ababa9 80%,#a6a5a3 80%,#494947 100%); 
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #fff;
-    font-family: var(--text-color);
-    position: relative;
-    text-transform: uppercase;	
-    font-size: 1em;
-    margin: 0;
-    font-weight: 600;
-    border-bottom: transparent;
-    
-    }
-
-    a:after {
-      background: none;
-      content: attr(data-heading);
-      left: 0;
-      top: 0;
-      z-index: -1;
-      position: absolute;
-      text-shadow: 
-      -1px 0 1px #c6bb9f, 
-      0 1px 1px #c6bb9f, 
-      5px 5px 10px rgba(0, 0, 0, 0.4),
-      -5px -5px 10px rgba(0, 0, 0, 0.4);
-  }
-
-  a:hover {
-    transition: 0.5s;
-    border-bottom: 1px solid (var(--text-color-light)) ;
-  }
-}
 
 
 @media (max-width: 600px) {
@@ -106,21 +65,7 @@
   }
 
 
-  .nav-light {
-    
-    display: flex;
-    justify-content: space-between;
-
-   
-    a {
-      
-      font-size: 0.7em;
-    }
-  }
-
-  h2 {
-    text-align: left;
-  }
+  
 }
 
 

@@ -4,13 +4,19 @@
     width: 100vh;
     height: 50vh;
     margin: 1em auto;
-    margin-bottom: 10em;
+    margin-bottom: 30em;
     display: flex;
     flex-direction: column;
 
-    .contacts-header {
-
+    h2 {
+        font-size: 1.5em;
         margin-bottom: 2em;
+    }
+
+    .contacts-header {
+        
+        margin-bottom: 2em;
+        
     }
     
 }
@@ -26,6 +32,26 @@
     justify-content: center;
     color: var(--text-color);
 
+    .messageLabel {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        
+        
+
+        textarea {
+            
+            color: var(--text-color);
+            margin: 1em auto;
+            background-color: transparent;
+            border-radius: 0%;
+            border: 1px solid var(--text-color);
+            display: flex;
+            padding: 0.5em;
+
+        }
+    }
+
     button {
         border: 1px solid var(--text-color);
         border-radius: 0%;
@@ -37,6 +63,7 @@
     }
 
     input {
+        color: var(--text-color);
         margin: 1em auto;
         background-color: transparent;
         border-radius: 0%;
@@ -44,5 +71,12 @@
         display: flex;
         padding: 0.5em;
 
+    }
+}
+
+
+@media (max-width:534px) {
+    .form-wrapper {
+        height: 30vh;
     }
 }

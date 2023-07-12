@@ -19,7 +19,6 @@ function Slider({slides}) {
         backgroundPosition:'center',
         backgroundSize:'cover',
         transition:'0.5s',
-
     }
 
 
@@ -41,23 +40,23 @@ function Slider({slides}) {
 
     
 
-    return (
-        <div className={theme.context === 'dark' ? 'slider-dark' : 'slider-light'}>
-            <div className="left-arrow"  onClick={goToPrevious}><FontAwesomeIcon icon={faArrowLeft}/></div>
-            <div alt = {slides[currentIndex].title} style={slideStyles}></div>
-            <div className="right-arrow" onClick={goToNext}><FontAwesomeIcon icon={faArrowRight}/></div>
-            <div className="dots-container">
-                {slides.map((slide,slideIndex)=>(
-                    <div 
-                    className="dot"
-                    key={slideIndex}
-                    onClick={() => goToSlide(slideIndex)}
-                    >●</div>
-                ))}
-            </div>
+return (
+    <div className={theme.context === 'dark' ? 'slider-dark' : 'slider-light'}>
+        <div className="left-arrow"  onClick={goToPrevious}><FontAwesomeIcon icon={faArrowLeft}/></div>
+        <div alt = {slides[currentIndex].title} style={slideStyles}></div>
+        <div className="right-arrow" onClick={goToNext}><FontAwesomeIcon icon={faArrowRight}/></div>
+        <div className="dots-container">
+            {slides.map((slide,slideIndex)=>(
+                <div 
+                className="dot"
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+                >●</div>
+            ))}
         </div>
-        
-    )
+    </div>
+    
+)
 }
 
 export default Slider;

@@ -22,7 +22,7 @@ function Contacts() {
       <div className="links">
         <h2>Useful links</h2>
         <div className="links-inner-wrapper">
-          <a href="#about-section">about</a>
+          <a href="#form">contact us</a>
           <a href="#pros">services</a>
           <a href="#home">home</a>
         </div>

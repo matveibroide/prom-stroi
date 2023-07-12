@@ -1,6 +1,7 @@
 .slider-dark {
     height:100%;
     position:relative;
+    margin-bottom: 5em;
     
     
 
@@ -48,50 +49,15 @@
 
 
 
-.slider-light {
-    height:100%;
-    position:relative;
-    
-    
 
-    .left-arrow {
 
-        position:absolute;
-        top:50%;
-        transform:translate(0, -50%);
-        left:32px;
-        font-size:3em;
-        color:#cecaca;
-        z-index:1;
-        cursor:pointer;
-        opacity:0.8;
+@media (max-width: 534px) {
+    .slider-dark { 
+
+    width: 82%;
+    margin: 0 auto;
+    height: 69%;
+
     }
-
-    .right-arrow {
-        position:absolute;
-        top:50%;
-        transform:translate(0, -50%);
-        right:32px;
-        font-size:3em;
-        color:#cecaca;
-        z-index:1;
-        cursor:pointer;
-        opacity:0.8;
-    }
-
-    .dots-container {
-
-        display: flex;
-        justify-content: center;
-    }
-
-    .dot {
-
-        color:#6b6b6b;
-        font-size:2em;
-        margin:0 3px;
-        cursor:pointer;
-    }
-
 
 }
