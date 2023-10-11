@@ -11,8 +11,8 @@ import img from '../assets/pic1.jpg'
 import img2 from '../assets/pic2.jpg'
 import img3 from '../assets/pic3.jpg'
 import img4 from '../assets/pic4.jpg'
+import logo from '../assets/Best in business.gif'
 
-/* import Form from '../components/form/form'; */
 
 
 function App() {
@@ -38,12 +38,11 @@ function App() {
 
   return (
     
-    <div className={theme.context === 'dark' ? 'App-dark' : 'App-light' }>
-    <Header/>
-    <NavBar/>
-    <div style = {containerStyles}>
-    <Slider slides = {slides}/>
-    </div>
+    <div className='wrapper'>
+    <section className="main">
+      <Header nav={NavBar}/>
+    <img className='main__logo' src={logo} alt="" />
+    </section>  
     <Professionals/>
     <Form/> 
     <Contacts></Contacts>

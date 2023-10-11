@@ -41,19 +41,12 @@ function Slider({slides}) {
     
 
 return (
-    <div className={theme.context === 'dark' ? 'slider-dark' : 'slider-light'}>
-        <div className="left-arrow"  onClick={goToPrevious}><FontAwesomeIcon icon={faArrowLeft}/></div>
-        <div alt = {slides[currentIndex].title} style={slideStyles}></div>
-        <div className="right-arrow" onClick={goToNext}><FontAwesomeIcon icon={faArrowRight}/></div>
-        <div className="dots-container">
-            {slides.map((slide,slideIndex)=>(
-                <div 
-                className="dot"
-                key={slideIndex}
-                onClick={() => goToSlide(slideIndex)}
-                >●</div>
-            ))}
+    <div className='slider-wrapper'>
+        <div className="highlight"></div>
+        <div className="swiper">
+        
         </div>
+        <div className="highlight"></div>
     </div>
     
 )

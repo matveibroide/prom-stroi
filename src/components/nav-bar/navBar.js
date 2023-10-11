@@ -4,22 +4,14 @@ import { ThemeContext } from "../context/context";
 
 function NavBar() {
 
-    const theme = useContext(ThemeContext)
-    const navBarStyles = {
-    margin: '2em auto',
-    fontSize: '2em',
-    color: '#a78140',
-    listStyle: 'none',
-    display: 'flex',
-    justifyContent:'space-around',
-    marginBottom:'4em'
-    }
 
     return (
-        <div style={navBarStyles}  className={theme.context === 'dark' ? 'nav-dark' : 'nav-light'}>
-            <li><a href="#pros">Our Services</a> </li>
-            <li><a href="#contacts">Contacts</a> </li>
-        </div>
+        <nav  className='nav-dark'>
+            <ul className='nav-dark__items'>
+                <li className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#pros">Наши проэкты</a> </li>
+                <li className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#contacts">Контакты</a> </li>
+            </ul>
+        </nav>
     )
 }
 

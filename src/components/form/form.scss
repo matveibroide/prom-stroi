@@ -1,21 +1,23 @@
 
 .form-wrapper {
-
-    width: 100vh;
-    height: 50vh;
-    margin: 1em auto;
-    margin-bottom: 30em;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    gap: auto;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+    background-image: url('../../assets/footer-back.png');
+    background-size: cover;
 
     h2 {
+        color: var(--text-color);
         font-size: 1.5em;
         margin-bottom: 2em;
     }
 
     .contacts-header {
         
-        margin-bottom: 2em;
+    color: var(--text-color);
         
     }
     

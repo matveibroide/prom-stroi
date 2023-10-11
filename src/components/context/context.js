@@ -6,6 +6,9 @@ function ThemeContextProvider({ children }) {
     
 const [context, setContext] = useState('dark');
 
+
+
+
 const toggleContext = () => {
 setContext(context === 'dark' ? 'light' : 'dark');
 };

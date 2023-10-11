@@ -1,22 +1,26 @@
 
 
 
-.pros-section-dark {
-
-height: 100vh;
+.pros {
+background-image: url('../../assets/back.png');
+background-size: cover;
+height: 110vh;
 width: 100%;
 display:flex;
 flex-direction: column;
 justify-content:space-around;
-margin-bottom: 100px;
-margin-top: 100px;
 
+.pros__header {
+    color: rgb(255, 243, 5);
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 5%;
+}
 
-
-.test {
+.pros__pros-container__descr-pros__content {
 overflow-y: scroll;
 transition: 1s;
-background-color: rgb(27, 29, 26);
+background: linear-gradient(#000000 35%, transparent);
 align-items: center;
 width: 80%;
 margin: 0 auto;
@@ -53,26 +57,44 @@ text-align: center;
 }
 }
 
-.pros-container {
-margin-top: 100px;
-position: relative;
-display: flex;
-justify-content: space-around;
+.pros__pros-container {
+margin-top: 10%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
 height: 70%;
-width: 100%;
-margin-bottom: 2em;
-justify-content: space-around;
+width: 95%;
+margin: 0 auto;
+align-items: center;
 
 
-.pros-header {
+
+.pros__pros-container__item {
+    height: 55%;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 5px 100px 150px #000,
+                inset 5px -100px 150px #000
+}
+
+.pros__pros-container__descr-pros {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.pros__pros-container__descr-pros__header {
 cursor: pointer;
 font-size: 24px;
-}
 
 }
 
+}
 
-.pros {
+
+.pros-container-item {
+text-align: center;
 position: relative;
 height: 75%;
 width: 28%;
@@ -80,42 +102,10 @@ display: flex;
 flex-direction: column;
 margin: 0 auto;
 
-.descr-pros {
 
-position: relative;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 3;
-color:red;
-text-shadow: 0px 0px 5px #fff;
-font-size: 24px;
-opacity: 0;
-}
 
 }
 
-.pros::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 1);
-opacity: 0;
-transition: all 0.3s ease;
-z-index: 2;
-}
-.pros:hover::before {
-opacity: 0.7;
-}
-
-
-
-.pros:hover .descr-pros {
-opacity: 1;
-}
 
 
 
@@ -131,29 +121,24 @@ margin: 0 auto;
 }
 
 
-
-
-
-
-
 @media (max-width: 1000px)  {
 
-.pros-section-dark .pros-container {
+.pros .pros__pros-container {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-between;
 }
 
-.test {
+.pros__pros-container__descr-pros__content {
     max-height: 50%;
     
 }
-.pros-section-dark-pros {
+.pros-pros {
     height: 100%;
     min-width: 90%;
 }
 
-.pros-section-dark .test .img-div {
+.pros .pros__pros-container__descr-pros__content .img-div {
     width: 90%;
     height: 50%;
     margin: 0 auto;
@@ -165,7 +150,7 @@ height: auto;
 max-width: 100%;
 }
 
-.pros-section-dark .pros-container {
+.pros .pros__pros-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,7 +173,7 @@ max-width: 100%;
 
     }
 
-    .pros-section-dark .pros {
+    .pros .pros {
         margin: 1em auto;
         min-width: 90%;
         min-height:6em;
@@ -208,7 +193,7 @@ max-width: 100%;
         z-index: 2;
     }
 
-    .descr-pros {
+    .pros__pros-container__descr-pros {
         opacity: 1;
     }
 }
@@ -220,15 +205,12 @@ max-width: 100%;
 
 @media (max-width: 534px)   {
 
-    .pros-section-dark {
-        margin: 200px auto;
-    }
-
-    .pros-section-dark .test {
+    
+    .pros .pros__pros-container__descr-pros__content {
         width: 100%;
     }
 
-    .pros-section-dark .test .img-div {
+    .pros .pros__pros-container__descr-pros__content .img-div {
         width: 90%;
         height: 50%;
         margin: 0 auto;
@@ -241,8 +223,8 @@ max-width: 100%;
         }
     
 
-        .pros-section-dark {
-            .pros-container {
+        .pros {
+            .pros__pros-container {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -254,7 +236,7 @@ max-width: 100%;
                     height: 170px;
                     
     
-                    .descr-pros {
+                    .pros__pros-container__descr-pros {
                         opacity: 1;
                         
                     }
@@ -285,15 +267,13 @@ max-width: 100%;
 
 @media  (orientation:landscape) { 
 
-.pros-section-dark {
-    margin: 221px auto;
-}
 
-.pros-section-dark .pros-container .pros {
+
+.pros .pros__pros-container .pros {
     min-height: 150px;
 }
 
-.pros-section-dark .test {
+.pros .pros__pros-container__descr-pros__content {
     
     height: 400px;
     width: 96%;
@@ -302,7 +282,7 @@ max-width: 100%;
     margin:0 auto;
     max-height: 100%;
 }
-.pros-section-dark .test .img-div {
+.pros .pros__pros-container__descr-pros__content .img-div {
     height: 500px;
     width: 350px;
 }

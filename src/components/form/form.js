@@ -24,7 +24,7 @@ const handleInputChange = (event) => {
 };
 
 return (
-    <div id="form" className="form-wrapper">
+    <section id="form" className="form-wrapper">
         <h1 className="contacts-header">Contacts</h1>
         <h2>To get in touch fill this form:</h2>
             <form className="contact-form" name="contact" method="post">
@@ -42,7 +42,7 @@ return (
                     <button type="submit">Send</button>
                 </p>
         </form>
-    </div>
+    </section>
 );
 }
 

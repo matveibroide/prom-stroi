@@ -1,21 +1,20 @@
 import { useContext } from 'react';
 import './contacts.scss'
 import React from 'react';
-import { ThemeContext } from '../context/context';
+
 
 
 
 function Contacts() {
 
-  const theme = useContext(ThemeContext)
   return (
-    <div className={theme.context === 'dark' ? 'contacts-wrapper-dark' : 'contacts-wrapper-light'}>
-      <div id='contacts' className='contacts'>
+    <section className='contacts'>
+      <div id='contacts' className='contacts__items-wrapper'>
         <h2>Contact Us</h2>
         <div className="address-wrapper">
-          <p>Phone (English):<br/> +972-53-986-06-90</p>
-          <p>Phone (Rus):<br/> +972-58-654-4622</p>
-          <p>Phone (Hebrew):<br/> +972-54-669-2774</p>
+          <p>Phone (English):<br/> +972-33-986-06-97</p>
+          <p>Phone (Russian):<br/> +972-33-986-06-97</p>
+          <p>Phone (Hebrew):<br/> +972-33-986-06-97</p>  
         </div>
       
       </div>
@@ -27,7 +26,7 @@ function Contacts() {
           <a href="#home">home</a>
         </div>
       </div>
-    </div>
+    </section>
     
   );
 }
