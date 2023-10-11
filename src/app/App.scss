@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
 @import '../styles/variables.scss';
 
+
+#root {max-width: 100%;}
+
+ul {
+  list-style: none;
+}
+
 .wrapper {
   
   max-width: 100%;
@@ -76,4 +83,18 @@
   }
     
   
+}
+
+@media(width<=768px) {
+  .main__logo {
+  width: 85%;
+  height: 9%;
+  margin-top: 30%;
+}
+
+.header-container__elements-wrapper {
+  width: 43%;
+}
+
+
 }

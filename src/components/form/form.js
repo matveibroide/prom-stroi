@@ -25,18 +25,18 @@ const handleInputChange = (event) => {
 
 return (
     <section id="form" className="form-wrapper">
-        <h1 className="contacts-header">Contact us!</h1>
+        <h1 className="contacts-header">Свяжитесь с нами!</h1>
         
             <form className="contact-form" name="contact" method="post">
                 <input required type="hidden" name="form-name" value="contact" />
                 <p>
-                    <label>Your Name: <input required type="text" name="name"/></label>
+                    <label>Имя: <input required type="text" name="name"/></label>
                 </p>
                 <p>
-                    <label>Your Email: <input type="email" name="email"/></label>
+                    <label>Email: <input type="email" name="email"/></label>
                 </p>
                 <p>
-                    <label className="messageLabel">Message: <textarea required name="message"></textarea></label>
+                    <label className="messageLabel">Сообщение: <textarea required name="message"></textarea></label>
                 </p>
                 <p>
                     <button type="submit">Send</button>
