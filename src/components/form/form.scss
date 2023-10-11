@@ -3,7 +3,8 @@
     text-align: center;
     display: grid;
     grid-template-columns: 0.5fr;
-    gap: auto;
+    grid-auto-rows: 35% 50%;
+    gap: 5px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -14,7 +15,6 @@
     h2 {
         color: var(--text-color);
         font-size: 1.5em;
-        margin-bottom: 2em;
     }
 
     .contacts-header {
@@ -26,8 +26,8 @@
 }
 
 .contact-form {
-    min-width: 80%;
-    height: auto;
+    width: 80%;
+    margin: 0 auto;
     background:linear-gradient(var(--main-background-color));
     text-transform: uppercase;
     display: flex;

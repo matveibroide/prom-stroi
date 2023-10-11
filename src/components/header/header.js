@@ -16,7 +16,7 @@ function Header() {
                 {element}
                 <h1 data-heading='Security'>СТРОЙ-ПРОМ</h1>
             </div>
-            <NavBar/>
+            {/* <NavBar/> */}
         </header>
     )
 }
