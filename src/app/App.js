@@ -6,36 +6,16 @@ import Slider from '../components/slider/slider';
 import Professionals from '../components/professionals/professionals';
 import Contacts from '../components/contacts/contacts';
 import Form from '../components/form/form';
-import {useContext, useState} from 'react'
+import {useState} from 'react'
 import img from '../assets/pic1.jpg'
 import img2 from '../assets/pic2.jpg'
 import img3 from '../assets/pic3.jpg'
-import img4 from '../assets/pic4.jpg'
 import logo from '../assets/Best in business.gif'
 
 
 
 function App() {
   
-  let theme =  useContext(ThemeContext);
-  
-  const slides =
-  [
-    
-      {url:`${img}`,title:'Businessman with professional bodyguards'},
-      {url:`${img2}`,title:'Businessman with professional bodyguards around bank'},
-      {url:`${img3}`,title:'Businessman with professional bodyguards sits in a car'},
-      {url:`${img4}`,title:'Businessman with professional bodyguards goes out an elevator'}
-    
-  ]
-
-  const containerStyles = {
-    width: '500px',
-    height: '280px',
-    margin:'0 auto',
-    
-  }
-
   return (
     
     <div className='wrapper'>

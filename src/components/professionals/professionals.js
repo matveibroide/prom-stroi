@@ -39,8 +39,8 @@ function Professionals() {
     const pros =
     [
         {url:`${img}`,title:`Кс-5 «Нагорная» Магистральный Газопровод «Сила Сибири»`},
-        {url:`${img2}`,title:`Кс-5 «Нагорная» Магистральный Газопровод «Сила Сибири»`},
-        {url:`${img3}`,title:`Кс-5 «Нагорная» Магистральный Газопровод «Сила Сибири»`},
+        {url:`${img3}`,title:`Tea-next»`},
+        {url:`${img2}`,title:`Многоуровневая парковка`},
     ]
 
     const titles = [`Кс-5 «Нагорная» Магистральный Газопровод «Сила Сибири»`, `Tea-Next`,`Многоуровневая Парковка`]
@@ -52,10 +52,10 @@ function Professionals() {
         if(visible.currentSlide === 0 && visible.sectionVisible) {
             return (
         <div className="pros__pros-container__descr-pros__content">
-            <h1>{titles[visible.currentSlide]}</h1>
+            <h1 className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
             <div alt = {pros[0].title} style = {{backgroundImage:`url(${pros[0].url})`,backgroundSize:'cover'}} className="img-div"></div>
             <div className="pros__pros-container__descr-pros__content__wrapper">
-                <h2>Виды работ:</h2>
+                <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                 <ul className="pros__pros-container__descr-pros__content__wrapper__items">
                     <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Слаботочные системы:
                         <ul style={{listStyle:'none'}}>
@@ -133,7 +133,7 @@ function Professionals() {
                 </ul>
             </div>
             <div onClick={() => handleClickClose()} 
-            className="close-bar">⇐ go back</div>
+            className="close-bar">Назад</div>
         </div>
             )
         }
@@ -141,10 +141,10 @@ function Professionals() {
         if(visible.currentSlide === 1 && visible.sectionVisible) {
             return (
         <div className="pros__pros-container__descr-pros__content">
-            <h1>{titles[visible.currentSlide]}</h1>
+            <h1  className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
             <div alt = {pros[1].title} style = {{backgroundImage:`url(${pros[1].url})`,backgroundSize:'cover'}} className="img-div"></div>
             <div className="pros__pros-container__descr-pros__content__wrapper">
-                <h2>Виды работ:</h2>
+                <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                 <ul className="pros__pros-container__descr-pros__content__wrapper__items">
                     <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Слаботочные системы:
                         <ul style={{listStyle:'none'}}>
@@ -222,7 +222,7 @@ function Professionals() {
                 </ul>
             </div>
             <div onClick={() => handleClickClose()} 
-            className="close-bar">⇐ go back</div>
+            className="close-bar">Назад</div>
         </div>
 
             )
@@ -231,10 +231,10 @@ function Professionals() {
         if(visible.currentSlide === 2 && visible.sectionVisible) {
             return (
         <div className="pros__pros-container__descr-pros__content">
-            <h1>{titles[visible.currentSlide]}</h1>
+            <h1 className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
             <div alt = {pros[2].title} style = {{backgroundImage:`url(${pros[2].url})`,backgroundSize:'cover'}} className="img-div"></div>
             <div className="pros__pros-container__descr-pros__content__wrapper">
-                <h2>Виды работ:</h2>
+                <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                 <ul className="pros__pros-container__descr-pros__content__wrapper__items">
                     <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Слаботочные системы:
                         <ul style={{listStyle:'none'}}>
@@ -312,7 +312,7 @@ function Professionals() {
                 </ul>
             </div>
             <div onClick={() => handleClickClose()} 
-            className="close-bar">⇐ go back</div>
+            className="close-bar">Назад</div>
         </div>
             )
         }

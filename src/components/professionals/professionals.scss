@@ -29,8 +29,10 @@ color: var(--text-color);
 text-align: left;
 font-size: 1em;
 
-h1 {
+.pros__pros-container__descr-pros__content__header {
 text-align: center;
+margin-top: 10%;
+margin-bottom: 10%;
 }
 
 
@@ -88,7 +90,7 @@ align-items: center;
 .pros__pros-container__descr-pros__header {
 cursor: pointer;
 width: 100%;
-text-align: left;
+text-align: center;
 
 }
 
@@ -114,7 +116,7 @@ margin: 0 auto;
 .img-div {
 margin: 0 auto;
 width: 95%;
-height: 80%;
+height: 100%;
 background-size: cover;
 margin: 0 auto;
 
@@ -175,6 +177,10 @@ margin: 0 auto;
 
 
 @media (width<=320px)   {
+
+    .img-div {
+        height: 50%;
+    }
 
     .pros__pros-container {
         grid-template-columns: 90%;

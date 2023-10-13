@@ -36,15 +36,3 @@
 }
 
 
-@media (width<=320px) {
-
-  .nav-dark {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-dark .nav-dark__items__item__link {
-  display: none;
-}
-
-}
