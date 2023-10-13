@@ -27,13 +27,16 @@ function NavBar({onChange}) {
 
     return (
         <div 
-            style = {{width:`${state.buttonActive ? '100%' : '15%'}`,
+            style = {
+            {   
+            width:`${state.buttonActive ? '100%' : '15%'}`,
             transition:'1s',
             }} 
             className="header__nav-wrapper">
             <button style={{display:`${menuStyle}`,background:'transparent',border:'none'}}  onClick={switchBtn}>{menu}</button>
             <nav style={{display:`${closeBtnStyle}`,width:'100%',padding:'15px',marginTop:'70%',background:'#05051a'}}  className='nav-dark'>
-                <ul style={{display:`${state.buttonActive ? 'flex' : 'none'}`,width:'100%',height:'200px',transition:'1s'}} className='nav-dark__items'>
+                <ul style={{display:`${state.buttonActive ? 'flex' : 'none'}`,width:'100%',height:'200px',transition:'1s',opacity:`${state.buttonActive ? `1` : '0'}`}} 
+                    className='nav-dark__items'>
                     <li style={{marginLeft:`${state.buttonActive ? `95` : `auto`}`}} className="nav-dark__items__item">
             <button 
             className="nav-dark__items__item__btn" 
