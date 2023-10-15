@@ -155,8 +155,9 @@ margin: 0 auto;
     gap: 10px;
 }
 
-@media(width<=768px) {
+@media (width<=768px) {
 
+    
 
     .pros__pros-container {
         height: fit-content;
@@ -165,7 +166,8 @@ margin: 0 auto;
         display: grid;
         text-align: left;
         grid-template-columns: 95%;
-        grid-template-rows: 150px 150px 150px;
+        grid-template-rows: 250px 250px 250px;
+        margin-bottom: 15%;
     }
 
     .pros__pros-container .pros__pros-container__item {
@@ -174,7 +176,7 @@ margin: 0 auto;
                     inset 5px -50px 150px #000 ;
     }
 
-    .pros__header {margin-top: 0;}
+    .pros__header {margin-top: 10%; margin-bottom: 10%;}
 }
 
 

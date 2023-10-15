@@ -8,7 +8,7 @@ import img2 from '../../assets/pic2.jpg'
 import img3 from '../../assets/pic3.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper/modules';
-
+import { useMediaQuery } from 'react-responsive'
 
 function Professionals() {
     
@@ -344,11 +344,15 @@ function Professionals() {
     
         );
     }; */
-    
+
+
+    const isTablet = useMediaQuery({
+        query: '(width<=768px)'
+        })
 
     return (
         
-<section id="pros" className='pros'>
+<section style={{height:`${isTablet ? `fit-content` : `100vh`}`}} id="pros" className='pros'>
 {/* {swiper()} */}
 <h1 className="pros__header">Проэкты</h1>
 {content()}

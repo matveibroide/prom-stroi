@@ -25,51 +25,17 @@ function NavBar({onChange}) {
     }
 
 
-    const Example = () => {
-
-        const isDesktopOrLaptop = useMediaQuery({
-            query: '(width>=1220x)'
-        })
-        const isTablet = useMediaQuery({
-        query: '(width<=768px)'
-        })
-        const isMobile = useMediaQuery({
-            query: '(width<=420px)'
-        })
     
-      
-      
-        return (
-            <div 
-            style = {
-            {   
-            width:`${state.buttonActive ? '100%' : '15%'}`,
-            transition:'1s',
-            }} 
-            className="header__nav-wrapper">
-            <button style={{display:`${menuStyle}`,background:'transparent',border:'none'}}  onClick={switchBtn}>{menu}</button>
-            <nav 
-            style={{display:`${closeBtnStyle}`,width:'100%',padding:'0 0 5px 8px',marginTop:'70%',background:'#05051a'}}  
-            className='nav-dark'>
-                <ul style={{display:`${state.buttonActive ? 'flex' : 'none'}`,
-                width:'100%',
-                height:'200px',
-                }} 
-                    className='nav-dark__items'>
-                    <li style={{marginLeft:`${state.buttonActive ? `95` : `auto`}`}} className="nav-dark__items__item">
-            <button 
-            className="nav-dark__items__item__btn" 
-            style={{display:`${closeBtnStyle}`,background:'transparent',border:'none'}} 
-            onClick={switchBtn}>{closeBtn}</button>
-                    </li>
-                    <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#pros">Наши проэкты</a> </li>
-                    <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="contacts">Связаться с нами</a> </li>
-                    <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#contacts">Контакты</a> </li>
-                </ul>
-            </nav>
-        </div>
-        )
-      }
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(width>=1220x)'
+    })
+    const isTablet = useMediaQuery({
+    query: '(width<=768px)'
+    })
+    const isMobile = useMediaQuery({
+        query: '(width<=420px)'
+    })
+
 
     
 
@@ -83,9 +49,16 @@ function NavBar({onChange}) {
             className="header__nav-wrapper">
             <button style={{display:`${menuStyle}`,background:'transparent',border:'none'}}  onClick={switchBtn}>{menu}</button>
             <nav 
-            style={{display:`${closeBtnStyle}`,width:'100%',padding:'0 0 5px 8px',marginTop:'70%',background:'#05051a'}}  
+            style={{
+            marginLeft:`${isMobile || isTablet ? '0' : 'auto'}`,
+            display:`${closeBtnStyle}`,
+            width:`${isMobile || isTablet ? '100%' : `25%`}`,
+            padding:`0 ${isMobile ? `5px` : `10px`} 5px 8px`,
+            marginTop:`${isMobile ? `70%` : `16%`}`,
+            background:'#05051a'}}  
             className='nav-dark'>
                 <ul style={{display:`${state.buttonActive ? 'flex' : 'none'}`,
+                flexWrap:'wrap',
                 width:'100%',
                 height:'200px',
                 }} 
