@@ -21,6 +21,8 @@ justify-content:space-around;
 overflow-y: scroll;
 transition: 1s;
 background: linear-gradient(#000000 35%, transparent);
+display: flex;
+flex-direction: column;
 align-items: center;
 width: 80%;
 margin: 0 auto;
@@ -162,7 +164,7 @@ margin: 0 auto;
         justify-content: center;
         display: grid;
         text-align: left;
-        grid-template-columns: 350px;
+        grid-template-columns: 95%;
         grid-template-rows: 150px 150px 150px;
     }
 
@@ -176,10 +178,10 @@ margin: 0 auto;
 }
 
 
-@media (width<=320px)   {
+@media (width<=420px)   {
 
-    .img-div {
-        height: 50%;
+    .pros .img-div {
+        width: 25%;
     }
 
     .pros__pros-container {
@@ -188,7 +190,8 @@ margin: 0 auto;
     }
     
     .pros__pros-container .pros-container-item .pros__pros-container__descr-pros .pros__pros-container__descr-pros__header {
-        font-size: 14;
+        font-size: 1em;
+        color: red;
     }
 
 }

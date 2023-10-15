@@ -16,6 +16,7 @@
     justify-content: space-around;
     list-style: none;
     align-items: center;
+    text-decoration: none;
     
   }
   
@@ -32,6 +33,19 @@
     border: transparent ;
     color:#000000;
     background: #fff;
+  }
+}
+
+
+
+@media(width<=768px) {
+
+  .nav-dark {
+    padding-top: 0;
+  }
+  .nav-dark__items {
+    display: flex;
+    flex-direction: column;
   }
 }
 

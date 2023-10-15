@@ -53,7 +53,7 @@ function Professionals() {
             return (
         <div className="pros__pros-container__descr-pros__content">
             <h1 className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
-            <div alt = {pros[0].title} style = {{backgroundImage:`url(${pros[0].url})`,backgroundSize:'cover'}} className="img-div"></div>
+            <img alt = {pros[0].title} src = {img} className="img-div"></img>
             <div className="pros__pros-container__descr-pros__content__wrapper">
                 <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                 <ul className="pros__pros-container__descr-pros__content__wrapper__items">
@@ -142,7 +142,7 @@ function Professionals() {
             return (
         <div className="pros__pros-container__descr-pros__content">
             <h1  className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
-            <div alt = {pros[1].title} style = {{backgroundImage:`url(${pros[1].url})`,backgroundSize:'cover'}} className="img-div"></div>
+            <img alt = {pros[1].title} src={img2} className="img-div"></img>
             <div className="pros__pros-container__descr-pros__content__wrapper">
                 <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                 <ul className="pros__pros-container__descr-pros__content__wrapper__items">
@@ -232,7 +232,7 @@ function Professionals() {
             return (
         <div className="pros__pros-container__descr-pros__content">
             <h1 className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
-            <div alt = {pros[2].title} style = {{backgroundImage:`url(${pros[2].url})`,backgroundSize:'cover'}} className="img-div"></div>
+            <img alt = {pros[2].title} src={img3} className="img-div"></img>
             <div className="pros__pros-container__descr-pros__content__wrapper">
                 <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                 <ul className="pros__pros-container__descr-pros__content__wrapper__items">

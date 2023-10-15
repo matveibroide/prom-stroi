@@ -5,7 +5,6 @@
     background: red;
 }
 
-
 .highlight {
     height: 20%;
     background-color: #3C4853;
@@ -16,53 +15,47 @@
     position:relative;
     margin-bottom: 5em;
     
-    
+.left-arrow {
 
-    .left-arrow {
+    position:absolute;
+    top:50%;
+    transform:translate(0, -50%);
+    left:32px;
+    font-size:3em;
+    color:var(--text-color);
+    z-index:1;
+    cursor:pointer;
+    opacity:0.8;
+}
 
-        position:absolute;
-        top:50%;
-        transform:translate(0, -50%);
-        left:32px;
-        font-size:3em;
-        color:var(--text-color);
-        z-index:1;
-        cursor:pointer;
-        opacity:0.8;
-    }
+.right-arrow {
+    position:absolute;
+    top:50%;
+    transform:translate(0, -50%);
+    right:32px;
+    font-size:3em;
+    color:var(--text-color);
+    z-index:1;
+    cursor:pointer;
+    opacity:0.8;
+}
 
-    .right-arrow {
-        position:absolute;
-        top:50%;
-        transform:translate(0, -50%);
-        right:32px;
-        font-size:3em;
-        color:var(--text-color);
-        z-index:1;
-        cursor:pointer;
-        opacity:0.8;
-    }
+.dots-container {
 
-    .dots-container {
+    display: flex;
+    justify-content: center;
+}
 
-        display: flex;
-        justify-content: center;
-    }
+.dot {
 
-    .dot {
-
-        color:var(--text-color);
-        font-size:2em;
-        margin:0 3px;
-        cursor:pointer;
-    }
-
-
+    color:var(--text-color);
+    font-size:2em;
+    margin:0 3px;
+    cursor:pointer;
 }
 
 
-
-
+}
 
 @media (max-width: 534px) {
     .slider-dark { 

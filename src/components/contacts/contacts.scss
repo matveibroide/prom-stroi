@@ -93,8 +93,14 @@ border-bottom: 1px solid var(--text-color);
 @media (width<=768px) {
 
 .contacts__items-wrapper__header {
+  margin-bottom: 1.5rem;
   text-align: center;
 }
+
+.contacts .contacts__items-wrapper {
+  display: none;
+}
+
 
 }
 

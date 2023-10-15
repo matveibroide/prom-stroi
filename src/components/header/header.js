@@ -6,7 +6,7 @@ import { faBuildingUser,faBars,faX} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 
 
-const element = <FontAwesomeIcon size='2xl' icon={faBuildingUser} />
+const element = <FontAwesomeIcon  size='2xl' icon={faBuildingUser} />
 
 
 function Header() {
@@ -15,13 +15,12 @@ function Header() {
 
     const onChange = () => {
             setState({ ...state, navBtnActive: !state.navBtnActive });
-            console.log(state)
     };
 
-    console.log(state.navBtnActive ? '1' : '2')
+
     return (
         <header id="home" className="header-container">
-            <div style={{display:`${state.navBtnActive ? `none` : `block`}`}} className="header-container__elements-wrapper">
+            <div style={{display:`${state.navBtnActive ? `none` : `flex`}`,transition:'1s'}} className="header-container__elements-wrapper">
                 {element}
                 <h1 data-heading='Security'>СТРОЙ-ПРОМ</h1>
             </div>
