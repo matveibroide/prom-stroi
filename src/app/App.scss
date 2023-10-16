@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
 @import '../styles/variables.scss';
 
+
 * {margin: 0; padding:0 ;}
 
 #root {max-width: 100%;}
@@ -16,7 +17,8 @@ ul {
 }
 
 .wrapper {
-  
+  position: relative;
+  overflow: hidden;
   max-width: 100%;
   letter-spacing: 0.4rem;
   display: flex;
