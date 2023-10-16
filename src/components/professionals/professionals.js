@@ -140,37 +140,59 @@ function Professionals() {
 
         if(visible.currentSlide === 1 && visible.sectionVisible) {
             return (
-        <div className="pros__pros-container__descr-pros__content">
-            <h1  className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
-            <img alt = {pros[1].title} src={img3} className="img-div"></img>
-            <div className="pros__pros-container__descr-pros__content__wrapper">
-                <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
-                <ul className="pros__pros-container__descr-pros__content__wrapper__items">
-                    <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Спил древесины в просеке:
-                        <ul style={{listStyle:'none'}}>
-                            <li>Трелёвка, вывоз, складирование древесины</li>
-                            <li>Земляные работы, копка траншей механическим способом под прокладку кабеля протяжённость 5000м</li>
-                            <li>Прокладка высокочастотного оптического волокна 5000м</li>
-                        </ul>
-                    </li>
-                    <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Период работ и место положения объекта:
-                        <ul>
-                            <li>
-                            Дата проведения работ:01.02.2022-30.07.2022
-                            </li>
-                            <li>
-                            Место нахождение объекта: Псковская Область
-                            </li>
-                            <li>
-                            Расключение шкафов или панелей коммутационной связи в кол-ве:4шт.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <div className="pros__pros-container__descr-pros__content">
+                <h1 className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
+                <img alt = {pros[1].title} src={img3} className="img-div"></img>
+                <div className="pros__pros-container__descr-pros__content__wrapper">
+                    <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
+                    <ul className="pros__pros-container__descr-pros__content__wrapper__items">
+                        <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Виды общестроительных работ в составе:
+    :
+                            <ul style={{listStyle:'none'}}>
+                                <li>Спил древесины в просеке
+                                От 6м до 10 м – шириной и 
+                                Протяжённость 21000м.
+                                </li>
+                                <li>
+                                    Трелёвка, вывоз, складирование древесины
+                                </li>
+                                <li>
+                                    Земляные работы, копка траншей механическим способом под прокладку кабеля протяжённость 5000м
+                                </li>
+                                <li>
+                                    Прокладка высокочастотного оптического волокна 5000м
+                                </li>
+                            </ul>
+                        </li>
+                        <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Отделочные работы:
+                            <ul>
+                                <li>
+                                штукатурные работы 2400м2
+                                </li>
+                                <li>
+                                укладка плитки 800м2
+                                </li>
+                                <li>
+                                армирование колон 75 шт
+                                </li>    
+                            </ul>
+                        </li>
+                       
+                        <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Период работ и место положения объекта:
+                            <ul>
+                                <li>
+                                Период работ: 01.02.2022-30.07.2022
+                                </li>
+                                <li>
+                                Место нахождение объекта: Псковская Область 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 <div onClick={() => handleClickClose()} 
-            className="close-bar"><a style={{color:'yellow',textDecoration:'none'}} href="#tea">Назад</a></div>
+                className="close-bar"><a style={{color:'yellow',textDecoration:'none'}} href="#park">Назад</a></div>
             </div>
-        </div>
 
             )
         }
