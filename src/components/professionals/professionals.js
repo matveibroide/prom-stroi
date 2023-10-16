@@ -167,9 +167,9 @@ function Professionals() {
                         </ul>
                     </li>
                 </ul>
-            </div>
-            <div onClick={() => handleClickClose()} 
+                <div onClick={() => handleClickClose()} 
             className="close-bar"><a style={{color:'yellow',textDecoration:'none'}} href="#tea">Назад</a></div>
+            </div>
         </div>
 
             )
