@@ -16,7 +16,6 @@ function App() {
     <div className='wrapper'>
     <section className="main">
       <Header nav={NavBar}/>
-    <img className='main__logo' src={logo} alt="" />
     </section>  
     <Professionals/>
     <Form/> 

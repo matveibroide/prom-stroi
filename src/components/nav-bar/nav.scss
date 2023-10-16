@@ -21,12 +21,23 @@
   }
   
   .nav-dark__items__item__link {
+    cursor: pointer;
     color:var(--text-color);
     text-decoration: none;
     font-weight: bold;
     }
 
-  .nav-dark__items__item__link:hover {
+    .nav-dark__items__item__link:hover {
+      transition: 1s;
+    color: #000000;
+    border: transparent;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+
+  .nav-dark .nav-dark__items__item:hover {
+    cursor: pointer;
     border-radius: 20px;
     padding: 5px;
     transition: 1s;

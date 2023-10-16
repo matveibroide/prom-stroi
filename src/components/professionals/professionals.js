@@ -142,7 +142,7 @@ function Professionals() {
             return (
         <div className="pros__pros-container__descr-pros__content">
             <h1  className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
-            <img alt = {pros[1].title} src={img2} className="img-div"></img>
+            <img alt = {pros[1].title} src={img3} className="img-div"></img>
             <div className="pros__pros-container__descr-pros__content__wrapper">
                 <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                 <ul className="pros__pros-container__descr-pros__content__wrapper__items">
@@ -232,7 +232,7 @@ function Professionals() {
             return (
         <div className="pros__pros-container__descr-pros__content">
             <h1 className = 'pros__pros-container__descr-pros__content__header'>{titles[visible.currentSlide]}</h1>
-            <img alt = {pros[2].title} src={img3} className="img-div"></img>
+            <img alt = {pros[1].title} src={img2} className="img-div"></img>
             <div className="pros__pros-container__descr-pros__content__wrapper">
                 <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                 <ul className="pros__pros-container__descr-pros__content__wrapper__items">
@@ -354,7 +354,7 @@ function Professionals() {
         
 <section style={{height:`${isTablet ? `fit-content` : `100vh`}`}} id="pros" className='pros'>
 {/* {swiper()} */}
-<h1 className="pros__header">Проэкты</h1>
+<h1 className="pros__header">Проекты</h1>
 {content()}
 {visible.backContentVisible ? (
 

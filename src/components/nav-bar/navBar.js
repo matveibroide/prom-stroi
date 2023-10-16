@@ -37,7 +37,17 @@ function NavBar({onChange}) {
     })
 
 
-    
+    const bigScrNav = (
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#form"></a></li>
+                    <li><a href="#contacts"></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    ) 
 
     return (
         <div 
@@ -52,7 +62,8 @@ function NavBar({onChange}) {
             style={{
             marginLeft:`${isMobile || isTablet ? '0' : 'auto'}`,
             display:`${closeBtnStyle}`,
-            width:`${isMobile || isTablet ? '100%' : `25%`}`,
+            width:`${isMobile || isTablet ? '100%' : `50%`}`,
+            height:`${isDesktopOrLaptop ? `500px` : `auto`}`,
             padding:`0 ${isMobile ? `5px` : `10px`} 5px 8px`,
             marginTop:`${isMobile ? `70%` : `16%`}`,
             background:'#05051a'}}  
@@ -70,7 +81,7 @@ function NavBar({onChange}) {
             onClick={switchBtn}>{closeBtn}</button>
                     </li>
                     <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#pros">Наши проэкты</a> </li>
-                    <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="contacts">Связаться с нами</a> </li>
+                    <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#form">Связаться с нами</a> </li>
                     <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#contacts">Контакты</a> </li>
                 </ul>
             </nav>

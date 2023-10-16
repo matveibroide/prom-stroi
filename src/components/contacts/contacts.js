@@ -14,24 +14,18 @@ function Contacts() {
         
         <div className="address-wrapper">
           <ul className='address-wrapper__items'>
-          <h2 className='contacts__items-wrapper__header'>Телефон</h2>
-            <li className='address-wrapper__items__item'>
-              <p>Phone (English):<br/> +972-33-986-06-97</p>
-            </li>
-            <li className='address-wrapper__items__item'>
-              <p>Phone (Russian):<br/> +972-33-986-06-97</p>
-            </li>
-            <li className='address-wrapper__items__item'>
-              <p>Phone (Hebrew):<br/> +972-33-986-06-97</p>
-            </li>
+          <h2 className='contacts__items-wrapper__header'>Позвоните нам</h2>
+           
+              <li style={{marginTop:'auto'}}><p>Телефон:<br/> +972-33-986-06-97</p></li>
+            
           </ul>
         </div>
       </div>
       <div className="links">
         <h2 className='contacts__items-wrapper__header'>Полезные ссылки</h2>
         <div className="links-inner-wrapper">
-          <a href="#form">contact us</a>
-          <a href="#pros">services</a>
+          <a href="#form">Связаться с нами</a>
+          <a href="#pros">Проекты</a>
           <a href="#home">home</a>
         </div>
       </div>
