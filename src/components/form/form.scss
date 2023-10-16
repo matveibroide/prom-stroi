@@ -79,8 +79,9 @@
 }
 
 
-@media (max-width:534px) {
+
+@media(width<=768px) {
     .form-wrapper {
-        height: 30vh;
+        font-size: 0.8rem;
     }
 }

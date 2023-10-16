@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useMediaQuery } from 'react-responsive'
 
 
-const menu =  <FontAwesomeIcon style = {{cursor:'pointer',color:'yellow'}} size='2xl' icon={faBars} />
-const closeBtn = <FontAwesomeIcon style = {{cursor:'pointer',color:'yellow'}} size='2xl' icon={faX} />
+const menu =  <FontAwesomeIcon style = {{cursor:'pointer',color:'yellow'}} size='lg' icon={faBars} />
+const closeBtn = <FontAwesomeIcon style = {{cursor:'pointer',color:'yellow'}} size='lg' icon={faX} />
 
 function NavBar({onChange}) {
     const [state, setState] = useState({buttonActive:false});
@@ -81,7 +81,7 @@ function NavBar({onChange}) {
             onClick={switchBtn}>{closeBtn}</button>
                     </li>
                     <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#pros">Наши проэкты</a> </li>
-                    <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#form">Связаться с нами</a> </li>
+                    <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#form">Оставить заявку</a> </li>
                     <li style={{width:`${state.buttonActive ? '100%' : '0'}`,transition:1}} className="nav-dark__items__item"><a className="nav-dark__items__item__link" href="#contacts">Контакты</a> </li>
                 </ul>
             </nav>

@@ -20,6 +20,7 @@ justify-content:space-around;
 
 
 .pros__pros-container__descr-pros__content {
+height: fit-content;
 overflow-y: scroll;
 transition: 1s;
 background: linear-gradient(#000000 35%, transparent);
@@ -159,9 +160,6 @@ margin: 0 auto;
 
 @media (width<=768px) {
 
-    .pros__pros-container__descr-pros__content {
-        max-height: 500px;
-    }
 
     .pros__pros-container {
         height: fit-content;

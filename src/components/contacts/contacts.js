@@ -8,9 +8,9 @@ import React from 'react';
 function Contacts() {
 
   return (
-    <footer className='contacts'>
+    <footer id='contacts' className='contacts'>
       
-      <div id='contacts' className='contacts__items-wrapper'>
+      <div  className='contacts__items-wrapper'>
         
         <div className="address-wrapper">
           <ul className='address-wrapper__items'>
@@ -24,7 +24,7 @@ function Contacts() {
       <div className="links">
         <h2 className='contacts__items-wrapper__header'>Полезные ссылки</h2>
         <div className="links-inner-wrapper">
-          <a href="#form">Связаться с нами</a>
+          <a href="#form">Оставить заявку</a>
           <a href="#pros">Проекты</a>
           <a href="#home">home</a>
         </div>
