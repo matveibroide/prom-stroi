@@ -13,8 +13,8 @@ import { useMediaQuery } from 'react-responsive'
 function Professionals() {
     
     const [visible, setVisible] = useState({ isOpen: false, currentSlide: null,backContentVisible:true,sectionVisible:false});
-
-   
+    const [userPlace,setUserPlace] = useState(null)
+    
 
     const handleClick = (index) => {
         setVisible(prevState => ({
@@ -24,6 +24,13 @@ function Professionals() {
             backContentVisible:false,
             sectionVisible:true
         }));
+
+        setUserPlace(prevState => ({
+            ...prevState,
+            userPlace:window.scrollY
+        }))
+       
+        console.log(userPlace.userPlace)
     };
 
     const handleClickClose = () => {
@@ -33,6 +40,12 @@ function Professionals() {
             sectionVisible:false
             
         }));
+
+        window.scroll({
+         top: userPlace.userPlace,
+         behavior: "smooth",
+        });
+    
     }
 
 
@@ -130,10 +143,35 @@ function Professionals() {
                             </li>
                         </ul>
                     </li>
+                    <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">СОП(Системы Оповещения Пожара) 
+                        <ul>
+                            <li>Монтаж громкоговорителей или звуковых колонок в количестве 109 шт</li>
+                            <li>Монтаж кабеля в количестве 1400 м</li>
+                        </ul>
+                    </li>
+                    <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">
+                        АТ(Автоматизация) 
+                        <ul>
+                            <li>Оборудование автоматизированной системы управления технологическими процессами в количестве 1 комплекта</li>
+                            <li>Оборудование КСО и КАТОАСУГП в количестве 1 комплекта</li>
+                            <li>Монтаж кабеле несущих систем в количестве 212м</li>
+                            <li>монтаж кабеля в количестве 1250м</li>
+                        </ul>
+                    </li>
+                    <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Период работ и место положения объекта:
+                            <ul>
+                                <li>
+                                Период работ: 14.08.22-02.05.23г
+                                </li>
+                                <li>
+                                Место нахождение объекта:Республика Якутия 
+                                </li>
+                            </ul>
+                        </li>
                 </ul>
             </div>
             <div onClick={() => handleClickClose()} 
-            className="close-bar"><a style={{color:'yellow',textDecoration:'none'}} href="#gazprom">Назад</a></div>
+            className="close-bar">Назад</div>
         </div>
             )
         }
@@ -164,20 +202,6 @@ function Professionals() {
                                 </li>
                             </ul>
                         </li>
-                        <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Отделочные работы:
-                            <ul>
-                                <li>
-                                штукатурные работы 2400м2
-                                </li>
-                                <li>
-                                укладка плитки 800м2
-                                </li>
-                                <li>
-                                армирование колон 75 шт
-                                </li>    
-                            </ul>
-                        </li>
-                       
                         <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Период работ и место положения объекта:
                             <ul>
                                 <li>
@@ -191,7 +215,7 @@ function Professionals() {
                     </ul>
                 </div>
                 <div onClick={() => handleClickClose()} 
-                className="close-bar"><a style={{color:'yellow',textDecoration:'none'}} href="#park">Назад</a></div>
+                className="close-bar">Назад</div>
             </div>
 
             )
@@ -249,7 +273,7 @@ function Professionals() {
                 </ul>
             </div>
             <div onClick={() => handleClickClose()} 
-            className="close-bar"><a style={{color:'yellow',textDecoration:'none'}} href="#park">Назад</a></div>
+            className="close-bar">Назад</div>
         </div>
             )
         }
