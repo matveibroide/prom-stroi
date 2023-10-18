@@ -172,8 +172,8 @@ function Professionals() {
                     </li>
                 </ul>
             </div>
-            <div onClick={() => handleClickClose()} 
-            className="close-bar">Назад</div>
+            <div  
+            className="close-bar"><button onClick={handleClickClose}>Назад</button></div>
         </div>
             )
         }
