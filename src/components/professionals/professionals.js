@@ -13,7 +13,7 @@ import { useMediaQuery } from 'react-responsive'
 function Professionals() {
     
     const [visible, setVisible] = useState({ isOpen: false, currentSlide: null,backContentVisible:true,sectionVisible:false});
-    const [userPlace,setUserPlace] = useState(null)
+    const [userPlace,setUserPlace] = useState(0)
     
 
     const handleClick = (index) => {
@@ -41,8 +41,9 @@ function Professionals() {
             
         }));
 
-        window.scroll({
+        window.scrollTo({
          top: userPlace.userPlace,
+         left:0,
          behavior: "smooth",
         });
     
@@ -158,7 +159,8 @@ function Professionals() {
                             <li>монтаж кабеля в количестве 1250м</li>
                         </ul>
                     </li>
-                    <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Период работ и место положения объекта:
+                    <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">
+                        Период работ и место положения объекта:
                             <ul>
                                 <li>
                                 Период работ: 14.08.22-02.05.23г
@@ -167,7 +169,7 @@ function Professionals() {
                                 Место нахождение объекта:Республика Якутия 
                                 </li>
                             </ul>
-                        </li>
+                    </li>
                 </ul>
             </div>
             <div onClick={() => handleClickClose()} 
@@ -184,8 +186,8 @@ function Professionals() {
                 <div className="pros__pros-container__descr-pros__content__wrapper">
                     <h2 className="pros__pros-container__descr-pros__content__header">Виды работ:</h2>
                     <ul className="pros__pros-container__descr-pros__content__wrapper__items">
-                        <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Виды общестроительных работ в составе:
-    :
+                        <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">
+                            Виды общестроительных работ в составе:
                             <ul style={{listStyle:'none'}}>
                                 <li>Спил древесины в просеке
                                 От 6м до 10 м – шириной и 
@@ -202,7 +204,8 @@ function Professionals() {
                                 </li>
                             </ul>
                         </li>
-                        <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">Период работ и место положения объекта:
+                        <li className="pros__pros-container__descr-pros__content__wrapper__items__main-item">
+                            Период работ и место положения объекта:
                             <ul>
                                 <li>
                                 Период работ: 01.02.2022-30.07.2022
